@@ -11,6 +11,7 @@ def Input():
             return inputCount
 
 def SumFounder(count):
+    #Делит число на составные
     summ = count % 10 + count % 100 // 10 + count // 100
     return summ
 
