@@ -10,7 +10,7 @@
 
 def Input():
     while True:
-        # без проверки на ввод числа
+        # без проверки на ввод числа .isdigit()
         inputCount = int(input("Введите общее количество журавликов: "))
         if inputCount > 0:
             break

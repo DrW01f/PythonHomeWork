@@ -5,7 +5,7 @@
 
 
 def Input():
-    while True:
+    while True:  # проверка на трехзначное число без проверки на ввод числа .isdigit()
         inputCount = int(input("Введите трехзначное число: "))
         if 99 < inputCount < 1000:
             return inputCount
