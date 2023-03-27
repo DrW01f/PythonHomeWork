@@ -1,1 +1,2 @@
-print( 123 // 100, 123 // 10 % 10, 123 % 10) 
+result = 1
+print(str(result) + " " + str(result*2) +  " " + str(result))
