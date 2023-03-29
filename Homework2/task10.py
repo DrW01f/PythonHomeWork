@@ -13,11 +13,11 @@ def InputFunc():
     return monets
 
 
-def Calculation(tuple):
+def Calculation(tuples):
     zeroCount = 0
     oneCount = 0
-    for i in range(0, len(tuple)):
-        if tuple[i] == 0:
+    for i in range(0, len(tuples)):
+        if tuples[i] == 0:
             zeroCount += 1
         else:
             oneCount += 1
