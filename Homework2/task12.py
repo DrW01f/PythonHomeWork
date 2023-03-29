@@ -19,10 +19,10 @@ def Calculation(counts):
         Y1 = (counts[0] - discriminant ** (1/2)) / 2
         Y2 = (counts[0] + discriminant ** (1/2)) / 2
     if Y1 == Y2:
-        
+
         print(f"Загаданные числа: {Y1} и {counts[0] - Y1}")
     else:
-        print(f"Загаданные числа: {Y1} , {counts[0] - Y1} или {Y1} , {counts[0] - Y2}")
+        print(f"Загаданные числа: {Y1} , {counts[0] - Y1} или {Y2} , {counts[0] - Y2}")
 
 
 def Main():
