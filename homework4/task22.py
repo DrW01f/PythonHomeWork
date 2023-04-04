@@ -7,8 +7,8 @@
 
 
 def InputFunc():
-    count1 = int(input("введите кол-во элементов первого массива:  "))
-    count2 = int(input("введите кол-во элементов второго массива:  "))
+    count1 = int(input("Введите кол-во элементов первого массива:  "))
+    count2 = int(input("Введите кол-во элементов второго массива:  "))
     array1 = list()
     array2 = list()
     for i in range(count1):
