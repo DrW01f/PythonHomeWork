@@ -17,20 +17,20 @@ import random
 
 def Garden():
     gardenCount = int(input("Введите кол-во грядок:  "))
-    garden = [random.randint(1, 100) for i in range(gardenCount)]
+    garden = [random.randint(1, 10) for i in range(gardenCount)]
     print(f"Всего {gardenCount} грядок, которые дали {garden} ягод ")
     return garden
 
 
 def Calculating(array: list):
-    maxIndex = 0
+    maxIndex = int()
     summ = 0
-    for i in range(len(array)-1):
+    for i in range(1, len(array)):
         if (array[-i] + array[-i - 1] + array[-i + 1]) > summ:
-            maxIndex = i
+            maxIndex =  i
             summ = (array[-i] + array[-i - 1] + array[-i + 1])
-    print(maxIndex, summ)
-    return f"С грядки {maxIndex-1} можно собрать {summ} ягод"
+        print(maxIndex, summ)
+    return f"С грядки {len(array) - maxIndex + 1} можно собрать {summ} ягод"
 
 
 def Main():
