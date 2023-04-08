@@ -6,15 +6,16 @@
 #     4
 
 
-def SumFunc(firstNumber: int, secondNumber: int):
+def SumFunc(firstNumber: int, secondNumber: int):        
+    if secondNumber == 0:
+        return firstNumber
+    return SumFunc(firstNumber+1, secondNumber-1)
     
-    pass
-
 
 def Main():
     number1 = int(input("Введите первое слагаемое:  "))
     number2 = int(input("Введите второе слагаемое:  "))
-    summ = SumFunc(number1, number2)
+    print(SumFunc(number1, number2))
 
 
 Main()

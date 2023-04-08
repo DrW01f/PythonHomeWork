@@ -4,13 +4,13 @@
 # A = 3; B = 5 -> 243 (3⁵)
 #     A = 2; B = 3 -> 8
 
-def Exponentiation(number: int, degree: int, x=1):
+def Exponentiation(number: int, degree: int):
     if degree == 0:
         return 1
     elif degree == 1:
         return number
-    # print(Exponentiation(number, degree - 1, x) * number)
-    return Exponentiation(number, degree - 1, x) * number
+    # print(Exponentiation(number, degree - 1) * number)
+    return Exponentiation(number, degree - 1) * number
 
 
 def Main():
