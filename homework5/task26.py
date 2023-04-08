@@ -9,7 +9,7 @@ def Exponentiation(number: int, degree: int, x=1):
         return 1
     elif degree == 1:
         return number
-    print(Exponentiation(number, degree - 1, x) * number)
+    # print(Exponentiation(number, degree - 1, x) * number)
     return Exponentiation(number, degree - 1, x) * number
 
 
