@@ -16,11 +16,14 @@
 
 def SecondMaxFinder(array = (), firstMax = 0, secondMax = 0) -> int:    
     count = int(input("Введите число (0 - окончание списка):  "))
-    array = (*array, count) 
-
-    if len(array) > 1:
+    if len(array) < 1:
+        array = (*array, count)          
+        return SecondMaxFinder(array, count, secondMax)
+    else:
         if count == 0:
+            print(f"Второй максимум из {array} будет {secondMax}")
             return secondMax, *array
+        array = (*array, count) 
         if count > firstMax:
             secondMax = firstMax
             firstMax = count
@@ -28,19 +31,8 @@ def SecondMaxFinder(array = (), firstMax = 0, secondMax = 0) -> int:
             secondMax = count
         print(f"вывод",  *array, "firstMax", {firstMax}, "secondMax", {secondMax})
         return SecondMaxFinder(array, firstMax, secondMax)
-        # else:
-        #     return SecondMaxFinder(array, firstMax, secondMax)
-    else:
-        # secondMax = count
-        # if count > firstMax:
-        #     secondMax = firstMax
-        #     firstMax = count            
-        return SecondMaxFinder(array, count, secondMax)
 
+ 
 
-
-def Main():
-    answer = SecondMaxFinder()
-    print(answer)
-
-Main()    
+SecondMaxFinder()
+  
