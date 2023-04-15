@@ -15,7 +15,7 @@
 def input_msg() -> bool:
 
     msg_list = input("Введите кричалку: ").strip().split(' ')
-    vowels = 'аеиоуыэюя'
+    vowels = 'аеиоуыэюяё'
     result = []  # для записи кол-ва гласных во фразе
     count = 0
     for word in msg_list:
